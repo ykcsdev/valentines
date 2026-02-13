@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=1.0, user-scalable=no">
-    <title>💕 A Special Question For Khushi 💕</title>
+    <title>💕 A Special Question For Pooja 💕</title>
     <style>
         * {
             margin: 0;
@@ -577,20 +577,25 @@ filter: drop-shadow(0 0 15px rgba(255,215,0,0.8));
             <div class="card" id="mainCard">
                 <div class="big-heart">💖</div>
                 
-                <h1 class="title">Hey <span class="name-highlight">Khushi</span>! ✨</h1>
+                <h1 class="title">Hey <span class="name-highlight">Thangam </span>! ✨</h1>
                 <p class="subtitle">I have something very special to ask you...</p>
                 
                 <h2 class="question">
-                    <span class="name-in-question">Khushi</span>, Will You Be My Valentine? 💕
+                    <span class="name-in-question">Pooja</span>, Will You Be My Valentine? 💕
                 </h2>
                 
-                <div class="buttons-container" id="buttonsContainer">
+                <!-- <div class="buttons-container" id="buttonsContainer">
                     <button class="btn btn-yes" id="yesBtn" onclick="sayYes()">Yes! 💖</button>
                     <button class="btn btn-no" id="noBtn" onmouseover="runAway()" onclick="runAway()">No</button>
+                </div> -->
+
+                 <div class="buttons-container" id="buttonsContainer">
+                    <button class="btn btn-yes" id="yesBtn" onclick="sayYes()">Yes! 💖</button>
+                    <button class="btn btn-no" id="noBtn">No</button>
                 </div>
 
                 <div class="love-note">
-                    <p>Every love story is beautiful, but <span>ours is my favorite</span> 💕</p>
+                    <p>You do love me la <span>Thangam?</span> 💕</p>
                 </div>
             </div>
 
@@ -611,6 +616,15 @@ filter: drop-shadow(0 0 15px rgba(255,215,0,0.8));
     </div>
 
     <script>
+            
+        noBtn.addEventListener("click", function () {
+        let currentFontSize = parseInt(
+            window.getComputedStyle(yesBtn).fontSize
+        );
+        yesBtn.style.fontSize = currentFontSize + 0.5 + "px";
+
+        runAway(); // also trigger runAway on tap
+        });
         // Create floating items
         function createFloatingItems() {
             const container = document.getElementById('heartsContainer');
@@ -648,21 +662,21 @@ filter: drop-shadow(0 0 15px rgba(255,215,0,0.8));
         let messageTimeout = null;
 
         const funnyMessages = [
-            "Haha! Nice try, Khushi! 😜💕",
+            "Haha! Nice try, Pooja! 😜💕",
             "Nope! That button is scared of you! 😏",
             "The No button says: 'I don't think so!' 💖",
             "Aww, just say Yes already! 😘",
             "That button is playing hard to get! 🙈",
-            "You can't catch it, Khushi! 😄",
+            "You can't catch it, Pooja! 😄",
             "It's running away from you! 💕",
             "The No button has left the chat! 😝",
             "Wrong button! ➡️ Yes is waiting!",
-            "Khushi, resistance is futile! 💘",
+            "Pooja, resistance is futile! 💘",
             "That button is too shy! 🙊",
             "Keep trying... or just click Yes! 😉",
             "🧸 The teddy wants you to say Yes!",
             "The teddy is judging you! 🧸😂",
-            "Make the teddy happy, Khushi! 🧸💖"
+            "Make the teddy happy, Pooja! 🧸💖"
         ];
 
         function runAway() {
@@ -799,7 +813,7 @@ filter: drop-shadow(0 0 15px rgba(255,215,0,0.8));
         createParticles();
 
         // Console message
-        console.log('%c💕 A special surprise for Khushi! 💕', 'font-size: 20px; color: #ff69b4;');
+        console.log('%c💕 A special surprise for Pooja! 💕', 'font-size: 20px; color: #ff69b4;');
         console.log('%c🧸 The teddy is rooting for you!', 'font-size: 14px; color: #a855f7;');
     </script>   
     <!-- Background Music -->
